@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": true,      // 暗黙的な any があるとエラー
+        "noImplicitReturns": true,  // 暗黙的に undefined 返してたらエラー（返り値を書くこと）
+        "noImplicitThis": true,     // this に型を明示しないとエラー
+        "noUnusedLocals": true,     // 使っていないローカル変数があるとエラー
+        "noUnusedParameters": true, // 使っていない引数があるとエラー
+        "strictNullChecks": false,   // デフォルトで non-nullableになるので null チェック必須に
+        "sourceMap": false
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
