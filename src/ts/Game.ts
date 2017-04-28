@@ -1,7 +1,16 @@
-export class Game extends Phaser.Game {
+import {Boot} from "./Boot";
+import {Preloader} from "./Preloader";
+
+export class Game extends Phaser.Game
+{
     constructor() {
-        super(360, 480, Phaser.AUTO, "content", null);
+        super(800, 600, Phaser.AUTO, "content", null);
 
         this.state.add("Boot", Boot, false);
+        this.state.add('Preloader', Preloader, false);
+        // this.state.add('MainMenu', MainMenu, false);
+        // this.state.add('Level1', Level1, false);
+
+        this.state.start("Boot");
     }
 }
