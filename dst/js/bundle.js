@@ -147,7 +147,7 @@ exports.Level1 = Level1;
 Object.defineProperty(exports, "__esModule", { value: true });
 class MainMenu extends Phaser.State {
     create() {
-        this.background = this.add.sprite(0, 0, "./images/titlepage");
+        this.background = this.add.sprite(0, 0, "titlepage");
         this.background.alpha = 0;
         this.logo = this.add.sprite(this.world.centerX, -300, "logo");
         this.logo.anchor.setTo(0.5, 0.5);

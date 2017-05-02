@@ -4,7 +4,7 @@ export class MainMenu extends Phaser.State
     logo: Phaser.Sprite;
 
     create() {
-        this.background = this.add.sprite(0, 0, "./images/titlepage");
+        this.background = this.add.sprite(0, 0, "titlepage");
         this.background.alpha = 0;
 
         this.logo = this.add.sprite(this.world.centerX, -300, "logo");
